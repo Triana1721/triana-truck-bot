@@ -32,6 +32,8 @@ REGLAS:
 5. NO inventar precios ni productos fuera del catálogo`;
 
 // Verificación webhook
+app.get('/', (req, res) => res.status(200).send('Bot Triana Truck OK'));
+app.get('/webhook',
 app.get('/webhook', (req, res) => {
   if (req.query['hub.mode'] === 'subscribe' &&
       req.query['hub.verify_token'] === VERIFY_TOKEN) {
