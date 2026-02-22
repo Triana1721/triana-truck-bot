@@ -82,4 +82,4 @@ async function sendWhatsApp(to, message) {
   );
 }
 
-app.listen(process.env.PORT || 3000, () => console.log('Bot Triana Truck activo ✅'));
+app.listen(process.env.PORT || 8080, () => console.log('Bot Triana Truck activo ✅'));
